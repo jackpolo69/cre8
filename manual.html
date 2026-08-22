@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GENIUS ∞ — The Manual</title>
+<style>
+  :root { --bg:#08080c; --panel:#101018; --panel2:#16161f; --line:#23232f; --ink:#e8e6e0; --dim:#8a8894; --gold:#d4a72c; --gold-hot:#ffce4f;
+    --orange:#ff8a2a; --yellow:#ffd21e; --purple:#7c4dff; --teal:#38d9a9; --red:#ff5d73; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--ink); font:16px/1.75 'Helvetica Neue', Arial, sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:860px; margin:0 auto; padding:0 26px; }
+  header { padding:90px 0 50px; text-align:center; border-bottom:1px solid var(--line); }
+  .brand { font-size:3rem; font-weight:800; letter-spacing:.03em; }
+  .brand span { color:var(--gold); }
+  .sub { font-size:.8rem; letter-spacing:.34em; text-transform:uppercase; color:var(--dim); margin-top:.4rem; }
+  .sub em { font-style:normal; color:var(--gold-hot); }
+  .tagline { margin-top:1.2rem; color:var(--dim); font-size:1.02rem; max-width:52ch; margin-inline:auto; }
+  nav.toc { display:flex; flex-wrap:wrap; gap:.5rem; justify-content:center; padding:1.6rem 0 0; }
+  nav.toc a { color:var(--gold-hot); border:1px solid var(--line); border-radius:8px; padding:.4rem .9rem; text-decoration:none; font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; }
+  section { padding:52px 0; border-bottom:1px solid var(--line); }
+  h2 { color:var(--gold); font-size:1.05rem; letter-spacing:.26em; margin-bottom:1.1rem; }
+  h3 { font-size:1rem; letter-spacing:.1em; margin:1.6rem 0 .5rem; color:var(--gold-hot); }
+  p { max-width:68ch; margin-bottom:.9rem; }
+  .kbd { display:inline-block; background:var(--panel2); border:1px solid var(--line); border-bottom-width:2px; border-radius:5px; padding:.05rem .5rem; font-family:ui-monospace,Menlo,monospace; font-size:.82rem; color:var(--gold-hot); }
+  table { width:100%; border-collapse:collapse; margin:1rem 0 1.4rem; font-size:.9rem; }
+  th { text-align:left; font-size:.66rem; letter-spacing:.18em; text-transform:uppercase; color:var(--dim); padding:.45rem .6rem; border-bottom:1px solid var(--gold); }
+  td { padding:.5rem .6rem; border-bottom:1px solid var(--line); vertical-align:top; }
+  td:first-child { white-space:nowrap; color:var(--gold-hot); font-weight:700; }
+  .tip { border-left:3px solid var(--gold); background:var(--panel); border-radius:0 10px 10px 0; padding:.8rem 1rem; margin:1.2rem 0; font-size:.92rem; }
+  .tip b { color:var(--gold-hot); }
+  .colors i { font-style:normal; font-weight:800; }
+  footer { padding:56px 0 80px; text-align:center; color:#55525e; font-size:.68rem; letter-spacing:.2em; text-transform:uppercase; }
+  .scroll-x { overflow-x:auto; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="brand">GENIUS<span>∞</span></div>
+  <div class="sub">THE MANUAL · BY MACHAVELLI</div>
+  <p class="tagline">Five studios in one box: produce, track, mix, master, DJ.
+  Everything synthesized, sequenced, and printed inside the machine — nothing to install, nothing to download, nothing to rent.</p>
+  <nav class="toc">
+    <a href="#transport">Transport</a><a href="#produce">Produce</a><a href="#pads">Pads &amp; Sounds</a>
+    <a href="#track">Track</a><a href="#mix">Mix</a><a href="#master">Master</a><a href="#dj">DJ</a>
+    <a href="#screens">Screens &amp; Widgets</a><a href="#projects">Projects</a>
+  </nav>
+</header>
+
+<section id="transport">
+  <h2>0 · THE TRANSPORT — always at the top</h2>
+  <div class="scroll-x"><table>
+    <tr><th>Control</th><th>What it does</th></tr>
+    <tr><td>▶ / ■</td><td>Play and stop the sequencer. The gold ring glows while the machine is live. Everything — grid, pads, meters, scope, frequency reader — rides this one clock.</td></tr>
+    <tr><td>BPM</td><td>Tempo, 60–180. Takes effect immediately, even mid-playback.</td></tr>
+    <tr><td>SWING %</td><td>MPC convention: <b>50%</b> is dead straight, push toward <b>66%</b> for triplet feel. The off-beat steps in the grid turn gray as swing deepens — you can see the pocket.</td></tr>
+    <tr><td>A B C D</td><td>Pattern banks. Each bank is a full 16-step pattern for every instrument. Switch live to perform arrangements.</td></tr>
+    <tr><td>🔒</td><td>The layout lock. Unlock it and every screen shows its widget bar — turn any widget on or off per screen, then lock your custom studio in place. Layouts persist.</td></tr>
+  </table></div>
+</section>
+
+<section id="produce">
+  <h2>0.5 &middot; MIDI &mdash; plug in and play</h2>
+<p>Hit <b>MIDI</b> in the transport and every connected controller comes alive (Chrome/Edge). MPC note map: <b>notes 36&ndash;51</b> (C1&ndash;D#2) fire pads 1&ndash;16; <b>52 and up</b> play KEYS melodically around middle C; <b>below 36</b> plays BASS. Velocity is honored everywhere.</p>
+<ul>
+<li><b>MIDI &bull; n</b> shows how many devices are live. Click again to arm <b>MIDI REC</b> (red): while the transport runs, everything you play quantizes straight into the grid and pad patterns &mdash; finger-drum a beat in, play a bassline in, it lands as steps.</li>
+<li><b>SPACEBAR</b> is play/stop, anywhere &mdash; the FL reflex.</li>
+</ul>
+<h2>1 · PRODUCE — the synesthetic grid</h2>
+  <p>The grid is the instrument. Six voices, sixteen steps, and the color language is the map
+  <span class="colors">— kick + snare in <i style="color:var(--orange)">orange</i>, hats in <i style="color:var(--yellow)">yellow</i>, long tones (bass, keys) in <i style="color:var(--purple)">purple</i> and <i style="color:var(--teal)">teal</i>.</span>
+  Brighter means harder; dimmer means softer. Swing grays the off-beats. Read the colors, and you're reading the record.</p>
+  <div class="scroll-x"><table>
+    <tr><th>Gesture</th><th>Result</th></tr>
+    <tr><td>Click a step</td><td>Toggle it on or off (full velocity).</td></tr>
+    <tr><td><span class="kbd">⇧</span> + click</td><td>Cycle velocity: 100% → 60% → 30%. The step dims as it softens.</td></tr>
+    <tr><td>Right-click</td><td>On BASS and KEYS: cycle the pitch through the scale (+2, +3, +5, +7, −2, −5 semitones). The offset shows on the step.</td></tr>
+    <tr><td>Click a track name</td><td>Audition that voice instantly.</td></tr>
+    <tr><td>STARTER / CLEAR</td><td>Reload the built-in groove, or wipe the current bank.</td></tr>
+    <tr><td>COPY → NEXT</td><td>Duplicate this bank into the next one — build A, copy to B, mutate B. That's arrangement.</td></tr>
+  </table></div>
+  <h3>The Stereo Scope</h3>
+  <p>Below the grid, the scope draws the finished master — left channel over right, live. When the low
+  end is mono and tight, the two traces move together. When the mix opens up, they breathe apart.</p>
+  <h3>The Frequency Reader</h3>
+  <p>The reader shows the live spectrum, the <b>centroid in Hz</b> (where the energy of your record is
+  vibrating right now), its <b>7-band name</b> — SUB, LOW, LOW-MID, MID, HIGH-MID, HIGH, AIR — and the
+  master compressor's gain reduction. Produce with your eyes on the vibration.</p>
+  <div class="tip"><b>The Machavelli method:</b> lay the drums first in orange and yellow, feel the swing at 54–58%,
+  then paint the purple. When the centroid sits where the record's soul should live, print it.</div>
+</section>
+
+<section id="pads">
+  <h2>1.5 &middot; THE SONG &mdash; arrangement mode</h2>
+<p>Patterns become records here. THE SONG is a chain of bars &mdash; each chip is one bar playing one bank (A&ndash;D).</p>
+<ul>
+<li><b>Click a chip</b> to cycle which bank that bar plays. <b>Right-click</b> removes it. <b>+ add bar</b> appends the current bank.</li>
+<li><b>SONG MODE</b> on: press play and the transport walks the arrangement bar by bar &mdash; the bank buttons follow along so you can watch the song move.</li>
+<li><b>&#11123; BOUNCE SONG</b> prints the ENTIRE arrangement &mdash; every bar, pads included &mdash; through the full master chain to one mastered WAV. This is your record.</li>
+</ul>
+<div class="tip"><b>Structure like a producer:</b> A A B A is verse&ndash;verse&ndash;chorus&ndash;verse. Build bank A as the verse groove, B as the chorus lift, C as the bridge, D as the breakdown.</div>
+<h2>1.7 &middot; ARRANGE &mdash; the session timeline</h2>
+<p>The ARRANGE screen is the Logic-style session view: tracks down the left, 32 bars across, a live playhead walking the timeline as it plays.</p>
+<ul>
+<li><b>ADD TRACK</b> &mdash; one per instrument (KICK &hellip; KEYS): each cell plays that instrument's row from a bank; click a cell to cycle A &rarr; B &rarr; C &rarr; D &rarr; off. <b>+ PADS</b> runs the pad sequence on its bars. <b>+ AUDIO</b> makes an audio track &mdash; pick a clip source (any take, import, or stem) and click a bar to place it.</li>
+<li><b>ARRANGE MODE</b> on &mdash; the transport plays the timeline instead of the loop; the playhead moves in real time and every cell stays editable while it runs.</li>
+</ul>
+<div class="tip"><b>The workflow:</b> build banks in PRODUCE, split a record in STEMS, drop its vocal on an AUDIO track, arrange verses and choruses per instrument &mdash; the session takes shape bar by bar.</div>
+<h2>1.8 &middot; NOTES &mdash; stems become MIDI</h2>
+<p>In STEMS, hit <b>&rarr; MIDI</b> on any stem and the transcriber reads it &mdash; onsets plus pitch tracking &mdash; into notes on the <b>score grid</b> (piano roll). <b>&#9654; PLAY</b> hears them, <b>&rarr; STEP GRID</b> quantizes the busiest bar straight into the step grid (drums to their lanes, melody to BASS/KEYS with semitone offsets), and <b>&#11123; .MID</b> exports a real MIDI file any DAW opens. Kick/snare/hat stems land on GM notes 36/38/42.</p>
+<h2>2 · PADS &amp; THE BOX — your sounds</h2>
+  <h3>The 16 pads</h3>
+  <div class="scroll-x"><table>
+    <tr><th>Gesture</th><th>Result</th></tr>
+    <tr><td>Tap a pad</td><td>Hit the sound, instantly, through the master chain.</td></tr>
+    <tr><td>Right-click a pad</td><td>Arm it for re-assignment — then click any sound in THE BOX to load it there.</td></tr>
+    <tr><td>Kit buttons</td><td><b>808 KIT</b>, <b>BOOM BAP</b>, <b>TRAP PACK</b> — original kits synthesized inside the machine, loaded to pads 1–8 and saved to your library automatically.</td></tr>
+    <tr><td>UPLOAD SOUNDS</td><td>Bring your own — any audio files, multi-select. They land on open pads and persist in the library forever.</td></tr>
+  </table></div>
+  <p>Every loaded pad grows its own sequencer row under the pad bank — same 16 steps, same clock, same swing as the grid.</p>
+  <h3>THE BOX — the sound library</h3>
+  <p>Every kit sound and every upload lives in THE BOX, persisted on your machine. Each sound can be
+  <b>assigned</b> to an armed pad, <b>downloaded</b> (⭳) as a file, or <b>deleted</b> (✕). Your uploads glow gold.</p>
+  <div class="tip"><b>Legal, in writing:</b> the built-in kits are original synthesized sounds — they're yours to use in anything.
+  Your uploads stay on your machine; nothing is sent anywhere.</div>
+</section>
+
+<section id="track">
+  <p><b>CHOKE GROUPS:</b> shift-click a pad to cycle its choke group (C1&ndash;C3, badge on the pad). Pads in the same group cut each other off &mdash; the classic open-hat / closed-hat move: closed hat chokes the open hat mid-ring, exactly like an MPC.</p>
+<h2>2.7 &middot; STEMS &mdash; take any record apart</h2>
+<p>STEMS lives in the TRACK screen &mdash; it is part of the creation process. Load a stereo master and GENIUS &infin; breaks it into <b>named stems</b>: <b>KICK &middot; SNARE + CLAPS &middot; HI HATS &middot; BASS &middot; LEAD VOCAL &middot; MUSIC</b> &mdash; band-split transient separation plus center-channel extraction, computed in the box; nothing leaves your machine.</p>
+<ul>
+<li><b>&rarr; TRACK</b> drops a stem into TRACKING as an audio track (so does <b>ALL &rarr; TRACKS</b> for the whole set). <b>&rarr; PAD</b> makes it a playable sample. <b>&rarr; DECK A/B</b> throws it on a turntable. <b>&#11123; WAV</b> exports the file, named.</li>
+<li>Treat a long stem like a sample &mdash; that is the move. Your catalog in stereo becomes raw material again: pull the vocal, keep the music bed, rebuild the record.</li>
+</ul>
+<div class="tip"><b>Honest about quality:</b> this engine is classic DSP separation &mdash; strong on kick/snare/hats/bass/vocal-center, approximate on dense mixes. Instrument-level naming (piano vs backing vocals vs ad libs) needs neural separation, which is the headline feature of the desktop edition in progress. Nothing here pretends otherwise.</div>
+<h2>3 · TRACK — record real takes</h2>
+  <div class="scroll-x"><table>
+    <tr><th>Button</th><th>What it records</th></tr>
+    <tr><td>● REC MIC</td><td>Your microphone — vocals, an instrument, talkback — recorded raw (no browser noise-shaping) while the beat plays.</td></tr>
+    <tr><td>● REC MIX</td><td>The machine itself — prints exactly what the master bus is playing. Auto-starts the transport.</td></tr>
+    <tr><td>■ STOP &amp; KEEP</td><td>Ends the take and drops it into the take list.</td></tr>
+  </table></div>
+  <p>Every take gets a card: play it back <b>through the master chain</b> (so it sits in the mix), or save it to disk.</p>
+</section>
+
+<section id="mix">
+  <h2>4 · MIX — the console</h2>
+  <p>Six hardware strips, one per voice. Top to bottom, exactly like a desk:</p>
+  <div class="scroll-x"><table>
+    <tr><th>Section</th><th>What it does</th></tr>
+    <tr><td>Meter</td><td>Live level in the track's color.</td></tr>
+    <tr><td>Fader</td><td>Channel level, up to +40% over unity.</td></tr>
+    <tr><td>PAN</td><td>True stereo placement.</td></tr>
+    <tr><td>LOW / MID / HIGH</td><td>3-band EQ, ±12dB — shelves on the ends, a bell at 1.2k.</td></tr>
+    <tr><td>VERB</td><td>Send to the shared reverb — a real convolution room generated inside the box.</td></tr>
+    <tr><td>DYN · THR · RAT</td><td><b>Per-strip compressor.</b> DYN switches it in, THR sets where it bites (−40 to 0dB), RAT sets how hard (1:1 to 10:1). The red LED lights when it's working.</td></tr>
+    <tr><td>M / S</td><td>Mute and Solo. Solo follows console rules — any solo silences everything unsoloed.</td></tr>
+  </table></div>
+  <div class="tip"><b>Fast mix recipe:</b> DYN the kick (THR −20, RAT 4) and the bass (THR −24, RAT 3), pull hats to 80%,
+  pan keys slightly off-center, one breath of VERB on snare. Watch the scope tighten.</div>
+</section>
+
+<section id="master">
+  <p><b>THE FX SENDS:</b> AUX 1 is the reverb send; AUX 2 is the tempo ECHO send. The master section's FX RETURNS block picks the reverb room &mdash; <b>ROOM / HALL / PLATE / CATHEDRAL</b> &mdash; and holds the echo's TIME, feedback (FB), and both return levels. Verb for space, echo for depth; a touch of AUX 2 on the snare is the oldest trick in the book.</p>
+<h2>4.5 &middot; THE RACK &mdash; plugin inserts</h2>
+<p>Under the console lives THE RACK: per-channel insert chains, FL-channel-rack style. Pick a channel, stack devices left to right &mdash; each one is a plugin window with its own knobs, sitting after the strip's EQ and DYN, and every device <b>prints in the bounce</b>.</p>
+<ul>
+<li><b>CHORUS</b> (rate/depth/mix) &middot; <b>PHASER</b> (rate/mix) &middot; <b>DRIVE</b> (drive/level) &middot; <b>CRUSH</b> (bits/mix) &middot; <b>AUTOFILTER</b> (rate/range) &middot; <b>TREMOLO</b> (rate/depth)</li>
+<li>Racks save with the project and load back exactly.</li>
+</ul>
+<div class="tip"><b>On VST:</b> a browser can't execute native VST3 binaries &mdash; no honest web app can. THE RACK is the socket architecture; the desktop edition of GENIUS &infin; docks real VST3s into these same slots.</div>
+<h2>5 · MASTER — the rack</h2>
+  <p>Three units of gear, top to bottom, in the exact order the signal flows:</p>
+  <div class="scroll-x"><table>
+    <tr><th>Unit</th><th>Controls</th></tr>
+    <tr><td>MASTER EQ</td><td>LOW / MID / HIGH, ±10dB — the tone of the whole record.</td></tr>
+    <tr><td>COMPRESSOR</td><td>THRESH, RATIO, ATTACK, RELEASE — glue. The GR meter shows exactly how many dB it's holding, live.</td></tr>
+    <tr><td>LIMIT &amp; OUT</td><td>The limiter (−1.5dB brickwall, on/off) and final OUTPUT level.</td></tr>
+  </table></div>
+  <h3>⭳ BOUNCE 4-BAR WAV</h3>
+  <p>The money button. It renders four bars of the current bank <b>offline, through this exact chain</b> —
+  every strip setting, the reverb, the EQ, the compressor, the limiter — and hands you a true 44.1k stereo
+  WAV file. What you hear is what you print. That file is mastered <em>by this rack</em>.</p>
+</section>
+
+<section id="dj">
+  <p><b>TAPE DRIVE</b> is analog glue &mdash; soft saturation before the compressor; a little (10&ndash;25%) warms and thickens, a lot distorts on purpose. <b>ST WIDTH</b> is a mid/side control: MONO checks club translation, NATURAL is untouched, wider spreads the sides. <b>LOUD</b> is the live loudness meter of the finished master &mdash; aim for it breathing in the middle of the bar, not pinned.</p>
+<h2>6 · DJ — the decks</h2>
+  <p>Two full players with spinning vinyl. Load anything from your own catalog.</p>
+  <div class="scroll-x"><table>
+    <tr><th>Control</th><th>What it does</th></tr>
+    <tr><td>LOAD</td><td>Open any audio file into the deck. The waveform draws; the platter gets its label.</td></tr>
+    <tr><td>The platter</td><td>Spins while the deck plays — and its speed follows your pitch, like real vinyl.</td></tr>
+    <tr><td>▶ / ❚❚ · CUE</td><td>Play/pause from position · CUE snaps back to the top.</td></tr>
+    <tr><td>The waveform</td><td>Click anywhere to needle-drop straight to that point.</td></tr>
+    <tr><td>PITCH</td><td>±16% tempo with live % readout — beatmatch by ear.</td></tr>
+    <tr><td>L / M / H</td><td>Kill switches — slam a band out for the blend, punch it back for the drop.</td></tr>
+    <tr><td>A ↔ B</td><td>Equal-power crossfader. Both decks flow through the master chain, so the reader and scope see your set too.</td></tr>
+  </table></div>
+  <div class="tip"><b>Blend move:</b> match PITCH by ear, kill the incoming LOW, ride the fader to center, then swap the lows. The platters show you both tempos at a glance.</div>
+</section>
+
+<section id="screens">
+  <p><b>SCRATCH:</b> grab a platter and drag left/right &mdash; the record scrubs under a needle with real scratch grains. Release and it rolls back into play from where you left it.</p>
+<p><b>DJ FX (per deck):</b> the FX row under each deck is the performance unit &mdash; one-knob <b>FILTER</b> (left = low-pass sweep, right = high-pass sweep, center = open), beat <b>ECHO</b> with time + wet, <b>VERB</b> wet, and <b>FLANGE</b> wet. Kill the filter into an echo-out and drop the other deck &mdash; that's the transition.</p>
+<p><b>THE PRO DECK:</b> every loaded track gets its <b>BPM detected</b> automatically (shown live, rate-adjusted). <b>SYNC</b> matches a deck's tempo to the other deck &mdash; beatmatch in one press. The <b>pitch fader range</b> switches 8 / 16 / 50%. <b>LOOP 1/2/4/8</b> sets an instant beat loop from where you are (EXIT releases it clean); <b>JUMP &plusmn;1/&plusmn;4</b> beat-skips through the track. The <b>VINYL/JOG</b> toggle is the CDJ platter switch: VINYL means touching the platter stops the record and drags scratch it; JOG means dragging bends pitch to nudge a blend into phase. <b>CHOP</b> in the FX row is the beat-slicer &mdash; synced to the deck's BPM at 1/4, 1/8 or 1/16 with a depth knob.</p>
+<p><b>THE MIXER (middle):</b> a real two-channel battle mixer &mdash; per channel: TRIM, full 3-band EQ (&minus;24 to +12 dB) with KILL switches, CUE to the headphone bus, VU meter, and a vertical channel fader; the crossfader underneath multiplies against the channel faders exactly like the hardware. <b>Drop any audio file straight onto a platter</b> to load it. The <b>&#9632;</b> button is the Technics stop &mdash; the platter brakes to rest instead of cutting dead.</p>
+<p><b>Hardware:</b> MIDI controllers connect today through the transport's MIDI button. Full DJ-controller mapping (jog wheels, mixers, HID decks) docks in with the desktop edition.</p>
+<h2>7 · SCREENS &amp; WIDGETS — build your own studio</h2>
+  <p>Five screens — PRODUCE, TRACK, MIX, MASTER, DJ — each a preset arrangement of widgets:
+  the grid, the pads, the scope, the reader, the box, the console, the rack, the decks, the takes.</p>
+  <p>Hit <b>🔓</b> and the widget bar appears: toggle any widget on or off <em>for that screen</em>. Want the
+  console on your PRODUCE screen? The reader next to your decks? Turn it on, lock it, it's yours — layouts
+  persist per screen, forever. This is the machine's first law: <b>the GUI belongs to the producer.</b></p>
+</section>
+
+<section id="projects">
+  <h2>8 · PROJECTS — save, share, reload</h2>
+  <div class="scroll-x"><table>
+    <tr><th>Action</th><th>What travels</th></tr>
+    <tr><td>SAVE</td><td>Everything — all four banks, BPM, swing, every strip, the master rack, pad assignments and pad patterns — saved locally AND downloaded as a .json you can send to anyone.</td></tr>
+    <tr><td>LOAD</td><td>Restores the last local save.</td></tr>
+    <tr><td>IMPORT PROJECT</td><td>In THE BOX — load a project .json someone sent you. Pads reconnect to sounds by library ID.</td></tr>
+    <tr><td>⭳ per sound</td><td>Any library sound downloads as a file.</td></tr>
+    <tr><td>BOUNCE</td><td>The finished, mastered WAV (see Master).</td></tr>
+  </table></div>
+</section>
+
+<footer>
+  GENIUS ∞ · BY MACHAVELLI · THE MANUAL v1 · EVERYTHING IN THE BOX
+</footer>
+
+</div>
+<h2>9 &middot; INSTALL &mdash; the studio in your dock</h2>
+<p>GENIUS &infin; installs as a real app: in Chrome/Edge hit the <b>install icon</b> in the address bar (or menu &rarr; "Install GENIUS &infin;&hellip;"). It opens in its own window, works <b>fully offline</b> after the first visit, and your library, projects and layouts live on your machine either way. The full desktop edition (native VST3, hardware DJ mapping, neural stems) builds on this same studio.</p>
+</body>
+</html>
